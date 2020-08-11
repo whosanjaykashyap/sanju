@@ -1,0 +1,430 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+   
+
+body{
+    
+    color: black;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Red Rose';
+}
+
+header{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+  
+}
+
+header h1{
+    margin-top: -100px;
+    
+}
+
+header, header::before{
+    background: 50% 50% / cover;
+    
+}
+
+header::before{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position:absolute;
+    right: 0;
+    top: 68px;
+    display: block;
+    background-image: url(laptop.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+    
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1;
+}
+
+
+@media screen and (max-width: auto) {
+    header::before{
+        background-size: 100%;
+        padding: 100px 40px;
+        padding: 0;}                  }
+
+.container{
+    max-width: auto;
+    margin: 100 auto;
+    background-image: url(mgY1Hnj.jpg);
+    font-size: 24px;
+    padding-top: 544px;
+}
+
+.parallax {
+    padding: 100px 35px;
+    background: transparent;
+}
+
+.info{
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    
+}
+
+
+*{ margin: 0;
+    padding: 0;
+    font-family: 'Red Rose';
+    box-sizing: border-box;}
+            
+            body{
+                background: #fff;
+                background-size: cover;
+                height:100vh;
+                background-position: left;
+                min-height: 100vh;
+                justify-content: center;
+                background-color: #f1f1f1;
+                background:#fff;
+                background-size: cover;
+                
+            }
+        .header
+            {
+                width:100%;
+                background-color: rgba(0,0,0,.2);
+            }
+            .header ul{
+                text-align: right;
+            }
+            
+            .header ul li{
+                list-style: none;
+                display: inline-block;
+                
+            }    
+            .header ul li a
+            {
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 100%;
+                font-family: 'Comfortaa', cursive;
+                letter-spacing: 2px;
+                font-weight: 600;
+                padding: 25px;
+                transition: all ease 0.5s;
+                
+            }
+            
+            .header ul li a:hover{
+                background-color: #211b4385;
+                
+                
+                
+            }
+.logo img{
+    position: relative;
+    
+    margin-left: 0px;
+}
+        
+
+
+
+
+
+.about-section{
+    
+    background-image: url(macbook_apple.jpg);
+    background-size: cover;
+    height:110vh;
+    background-position: left;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.inner-container{
+    
+    width: 45%;
+    height: 75%;
+    float: left;
+    background-clip: #fdfdfd;
+    padding: 50px;   
+}
+
+.inner-container h1{
+    
+    font-family: 'Red Rose', cursive;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    
+    
+}
+
+.text {
+    
+    
+    font-family: 'Quattrocento', serif;
+    font-size: 20px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    
+}
+
+.skills {
+    
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-container{padding: 80px;}
+}
+
+
+@media screen and (max-width: 1000px) {
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+        
+    }
+    .inner-container{width: 100%;}
+}
+
+@media screen and (max-width: 600px) 
+    { .about-section{padding: 0;}
+      .inner-container{
+    padding: 60px;}
+}
+
+
+
+section .container{
+    position: relative;
+    min-width: 1200px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section .container .contactinfo{
+    position: absolute;
+    top: 40px;
+    width: 370px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+section .container .contactinfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .container .contactinfo .info{
+    position: relative;
+    margin: 20px 0;
+}
+section .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+section .container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+section .container .contactinfo .info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .container .contactinfo .info li span:nth-child(2){
+   color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+section .container .contactinfo .info li:hover span:nth-child(1) img,
+section .container .contactinfo .info li:hover span:nth-child(2){
+    opacity: 1;
+}
+
+section .container .contactinfo .sci
+{
+ position: relative;
+    display: flex;
+}
+section .container .contactinfo .sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+section .container .contactinfo .sci li a{
+    text-decoration: none;
+    }
+section .container .contactinfo .sci li a img{
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .container .contactinfo .sci li:hover a img{
+    opacity: 1;
+}
+section .container .contactform{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+section .container .contactform h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .container .contactform .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .container .contactform .formBox .inputBox{
+    position: relative;
+    margin: 0 35px 35px 0;
+    width: 40%;
+}
+section .container .contactform .formBox .inputBox .w50{
+    width: 47%;
+}
+section .container .contactform .formBox .inputBox .w100{
+    width: 100%;
+}
+section .container .contactform .formBox .inputBox input,
+section .container .contactform .formBox .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    resize: none;
+}
+section .container .contactform .formBox .inputBox textarea{
+    min-height: 120px;
+}
+section .container .contactform .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+section .container .contactform .formBox .inputBox input:focus ~span,
+section .container .contactform .formBox .inputBox textarea:focus ~span,
+section .container .contactform .formBox .inputBox input:valid ~span,
+section .container .contactform .formBox .inputBox textarea:valid ~span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+section .container .contactform .formBox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .container .contactform .formBox .inputBox input[type="submit"]:hover{
+    background: #ff568c;
+}
+
+
+
+
+.headerlogo
+            {
+                width:100%;
+                background-color: rgba(0,0,0,.2);
+            }
+            .headerlogo ul{
+                text-align: right;
+            }
+            
+            .headerlogo ul li{
+                list-style: none;
+                display: inline-block;
+                
+            }    
+            .headerlogo ul li a
+            {
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 100%;
+                font-family: 'Comfortaa', cursive;
+                letter-spacing: 2px;
+                font-weight: 600;
+                padding: 25px;
+                transition: all ease 0.5s;
+                
+            }
+            
+            .headerlogo ul li a:hover{
+                background-color: #211b4385;
+                
+                
+                
+            }
+.navlogo img{
+    position: absolute;
+    
+    margin-left: 30px;
+}
